@@ -1,0 +1,16 @@
+Linting  (tools to check code formatting)
+    install flake8 package
+    config flake8 (place in app dir)
+    run it through docker compose 
+
+Testing 
+    Django test suite 
+
+
+requirements.dev.txt is only for development dependencies
+
+Github actions (for automation , for linting , for unit testing)
+    create a config file 
+    add steps for linting and testing
+    docker hub auth 
+        

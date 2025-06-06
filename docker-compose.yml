@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  app: # name of service
+    build:
+      context: . # Dockerfile in current directory
+      args:
+        - DEV=true # for development environment
+    ports:
+      - "8000:8000" # map port from local machine to docker container 
+    volumes:
+      - ./app:/app # map app dir from local to container
+    command: > 
+      sh -c "python manage.py runserver 0.0.0.0:8000"  
