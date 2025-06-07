@@ -43,7 +43,15 @@ Django setup with DB
             postgressql-dev
             musl-dev
         so we clean them afterwards
-        
+
+    add settings in settings.py
+
+    Handling DB race problem (wait_for_db)
+        ist create a app for this purpose.
+        2nd create a custom command (wait_for_db)
+        update the wait_for_db in docker compose  
+
+    
 
 
      
