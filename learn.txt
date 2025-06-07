@@ -13,4 +13,38 @@ Github actions (for automation , for linting , for unit testing)
     create a config file 
     add steps for linting and testing
     docker hub auth 
+
+
+Mocking (change behaviour of dependencies)
+    example : prevent sending email every time tests run.
+
+
+Database Setup
+    PostgresSQL
+    update the compose file 
+        add volumes, db service
+        add environment variables 
+
+Django setup with DB 
+    install Psycopg2 package 
+        options:
+            .psycopg2-binary
+            .psycopg2 (good to use)            
+
+    for psycopg2 we need
+        c compiler
+        python3-dev
+        libpq-dev
+    
+    equivalent packages for alpine 
+        postgressql-client
+        only need to install the package (not to run)
+            build-base
+            postgressql-dev
+            musl-dev
+        so we clean them afterwards
         
+
+
+     
+
