@@ -1,10 +1,13 @@
 """
 calculator function
 """
-def add(x,y):
-    """add x and y """
+
+
+def add(x, y):
+    """add x and y"""
     return x + y
 
-def subtract(x,y):
-    """subtract x and y """
+
+def subtract(x, y):
+    """subtract x and y"""
     return y - x
